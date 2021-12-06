@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 20, 6, 0.7),rgba(20, 20, 6, 0.7)),url(slike/banner.jpeg); /* vidi sa vukelom da isece sliku*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.footer{
+    background:linear-gradient(rgba(20, 20, 6, 0.3),rgba(20, 20, 6, 0.3)), #ff5100;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer div ul{
+    list-style: none;
+
+}
+.footer div ul li a{
+    color: #ff5100;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.footer div ul li{
+    margin: 10px;
+}
+
+.parent-nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo{
+    width: 250px;
+    height: 50px;
+}
+.navbar{
+    flex: 1;
+    text-align: right;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+/* vidi da li ovo na hover je suvise */
+.navbar ul li a:hover{
+    color: #ff5100;
+}
+.navbar ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #ff5100;
+display:block;
+margin: auto;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+#tekst1{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+#tekst1 h1{
+    font-size: 150px;
+    color: #ff5100;
+}
+#dugme1{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+#dugme1:hover{
+    border: 1px solid #ff5100;
+    background-color: #ff5100;
+    transition: 1s;
+}
+/*vidi sta da radis za telefone za navbar 26min*/
+@media(max-width:700px){
+    #tekst1 h1{
+        font-size: 50px;
+        color: #ff5100;
+    }
+}
+.minilg{
+    height: 30px;
+    width: 30px;
+}
+.desni p{
+    color: black;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+/*-----termini-----*/
+
+.termini{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    
+    
+}
+
+.box{
+    width: 600px;
+    padding: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ff5100;
+    margin-top: 700px;
+    margin-bottom: 0px;
+    height: 1000px;
+    border-radius: 5px;
+    
+    
+
+    
+
+}
+.box input[type="text"], input[type="date"], input[type="time"]{
+    border: 0px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: #ffffff solid;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+
+    
+}
+.box input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus{
+    width: 300px;
+    transition: 0.5s;
+    border: #ff5100 solid;
+
+}
+.box input[type="submit"]{
+    border: 0px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px #ff5100 solid;
+    padding: 14px 40px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+
+    background: #ff5100;
+    transition: 0.25s;
+}
+.terminif{
+    background-color:#ff5100;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.terminif div ul{
+    list-style: none;
+
+}
+.terminif div ul li a{
+    color: #ff5100;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.terminif div ul li{
+    margin: 10px;
+}
+.terminih{
+    background-color: black;
+}
+textarea:focus{
+border-color: #ff5100 ;
+outline: none;
+
+}
+
+/*----- kontakt----- */
+
+.kontakt{
+    min-height: 100hv;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    
+}
+.iframe{
+    height: 459px;
+    width: 459px;
+    margin: 30px;
+}
+.kmapa{
+    display: flex;
+    gap: 300px;
+}
+.gmail{
+    padding-top: 150px;
+}
+.kontakt p, h1{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #ff5100;
+    padding: 20px;
+}
+#listek{
+    list-style: none;
+}
+.gazo{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#logo{
+    height: 100px;
+    width: 150px;
+    image-rendering: optimizeQuality;
+    filter: saturate(1.75);
+}
+.dva{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #ffffff;
+    background-color:rgba(0, 0, 0, 0.9);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+.naslov{
+    background-color:rgba(0, 0, 0, 0.9);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.boxtim {
+    position: relative;
+    width: 50%;
+  }
+
+.image {
+    display: block;
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ff5100;
+  }
+  
+  .boxtim:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+.tim{
+    padding-left: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 200px;
+    justify-self: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+.trenerih1{
+    background: rgba(0, 0, 0, 0.9); 
+    padding-left: 20px;
+}
+.boxtim1 {
+    position: relative;
+    width: 50%;
+    padding: 0;
+    
+  }
+
+.image1 {
+    display: block;
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+ }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ff5100;
+  }
+  
+  .boxtim1:hover .overlay1 {
+    opacity: 1;
+    
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 11.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .itf{
+      padding-left: 20px;
+      background: rgba(0, 0, 0, 0.9);
+      padding-bottom: 50px;
+      
+  }
+  .itf p{
+      color: white;
+      font-size: 20px;
+  }
+  .itf2{
+      display: flex;
+      padding-left: 20px;
+      padding: 30px;
+      background: #ff510065;
+      margin-right: 20px;
+      border-radius: 10px;
+  }
+  .itf2 img{
+      width: 100%;
+      height: 80%;
+
+  }
+  .atmosfera{
+      background: rgba(0, 0, 0, 0.9);
+      padding-left: 20px;
+  }
+  .atmo{
+    background:#ff510065 ;
+    display: inline-table;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  #ligas1{
+      width: 500px;
+      height: 450px;
+  }
+  #ligas2{
+    width: 400px;
+    height: 350px;
+}
+#ligas3{
+    width: 500px;
+    height: 450px;
+}
+.airplane{
+    background: rgba(0, 0, 0, 0.9);
+      padding-left: 20px;
+}
+.ap {
+    background:#ff510065 ;
+    display: inline-table;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.ap img{
+    height: 100%;
+    width: 100%;
+}
